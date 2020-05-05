@@ -51,6 +51,10 @@ class Game extends React.Component {
             let newClicked = this.state.clickedCharacters.concat(char);
             this.setState({clickedCharacters: newClicked});
             this.props.callback(true);
+            if(this.props.gameWon) {
+                this.props.gameOverCb();
+                this.setState({clickedCharacters: []});
+            }
         }
         
     }

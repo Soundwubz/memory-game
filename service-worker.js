@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/memory-game/precache-manifest.e8e478aaf8c42c063430b3a6aceb8915.js"
+  "/memory-game/precache-manifest.e0717f07c5367a325708f60f71e7b9d1.js"
 );
 
 self.addEventListener('message', (event) => {

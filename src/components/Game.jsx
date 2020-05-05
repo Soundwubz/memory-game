@@ -6,36 +6,28 @@ class Game extends React.Component {
    state = {
         characters :  [
             {
-                name: "chewie",
-                imgUrl: "/img/chewie.jpg"
+                name: "chewie"
             },
             {
-                name: "kylo",
-                imgUrl: "/img/kylo.jpg"
+                name: "kylo"
             },
             {
-                name: "rex",
-                imgUrl: "/img/rex.jpg"
+                name: "rex"
             },
             {
-                name: "rey",
-                imgUrl: "/img/rey.jpg"
+                name: "rey"
             },
             {
-                name: "stormtrooper",
-                imgUrl: "/img/stormtrooper.jpg"
+                name: "stormtrooper"
             },
             {
-                name: "threepio",
-                imgUrl: "/img/threepio.jpg"
+                name: "threepio"
             },
             {
-                name: "vader",
-                imgUrl: "/img/vader.jpg"
+                name: "vader"
             },
             {
-                name: "yoda",
-                imgUrl: "/img/yoda.jpg"
+                name: "yoda"
             }
         ],
         clickedCharacters: []
@@ -68,7 +60,7 @@ class Game extends React.Component {
         return (
             <div className="container game">
                 {this.shuffleCharacters.map(character => {
-                    return <Clicky onClick={() => this.clicked(character.name)} name={character.name} imgUrl={character.imgUrl} key={character.name}></Clicky>
+                    return <Clicky onClick={() => this.clicked(character.name)} name={character.name} key={character.name}></Clicky>
                 })}
             </div>
         )
